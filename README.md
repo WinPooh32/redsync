@@ -8,7 +8,7 @@ Redsync provides a Redis-based distributed mutual exclusion lock implementation 
 
 Install Redsync using the go get command:
 
-    $ go get github.com/go-redsync/redsync/v4
+    $ go get github.com/winpooh32/redsync/v4
 
 Two driver implementations will be installed; however, only the one used will be included in your project.
 
@@ -19,7 +19,7 @@ See the [examples](examples) folder for usage of each driver.
 
 ## Documentation
 
-- [Reference](https://godoc.org/github.com/go-redsync/redsync)
+- [Reference](https://godoc.org/github.com/winpooh32/redsync)
 
 ## Usage
 
@@ -30,8 +30,8 @@ package main
 
 import (
 	goredislib "github.com/go-redis/redis/v8"
-	"github.com/go-redsync/redsync/v4"
-	"github.com/go-redsync/redsync/v4/redis/goredis/v8"
+	"github.com/winpooh32/redsync/v4"
+	"github.com/winpooh32/redsync/v4/redis/goredis/v8"
 )
 
 func main() {

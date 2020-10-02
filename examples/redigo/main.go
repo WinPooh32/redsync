@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/go-redsync/redsync/v4"
-	"github.com/go-redsync/redsync/v4/redis/redigo"
+	"github.com/winpooh32/redsync/v4"
+	"github.com/winpooh32/redsync/v4/redis/redigo"
 	redigolib "github.com/gomodule/redigo/redis"
 	"github.com/stvp/tempredis"
 )

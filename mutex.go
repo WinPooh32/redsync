@@ -6,7 +6,7 @@ import (
 	"encoding/base64"
 	"time"
 
-	"github.com/go-redsync/redsync/v4/redis"
+	"github.com/winpooh32/redsync/v4/redis"
 	"github.com/hashicorp/go-multierror"
 )
 

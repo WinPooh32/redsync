@@ -2,8 +2,8 @@ package main
 
 import (
 	goredislib "github.com/go-redis/redis"
-	"github.com/go-redsync/redsync/v4"
-	"github.com/go-redsync/redsync/v4/redis/goredis"
+	"github.com/winpooh32/redsync/v4"
+	"github.com/winpooh32/redsync/v4/redis/goredis"
 	"github.com/stvp/tempredis"
 )
 

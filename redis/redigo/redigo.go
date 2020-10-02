@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	redsyncredis "github.com/go-redsync/redsync/v4/redis"
+	redsyncredis "github.com/winpooh32/redsync/v4/redis"
 	"github.com/gomodule/redigo/redis"
 )
 

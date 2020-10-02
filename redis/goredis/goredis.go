@@ -10,23 +10,23 @@ import (
 )
 
 type pool struct {
-	delegate *redis.Client
+	delegate redis.UniversalClient
 }
 
 func (p *pool) Get(ctx context.Context) (redsyncredis.Conn, error) {
 	c := p.delegate
-	if ctx != nil {
-		c = c.WithContext(ctx)
-	}
+	//if ctx != nil {
+	//	c = c.WithContext(ctx)
+	//}
 	return &conn{c}, nil
 }
 
-func NewPool(delegate *redis.Client) redsyncredis.Pool {
+func NewPool(delegate redis.UniversalClient) redsyncredis.Pool {
 	return &pool{delegate}
 }
 
 type conn struct {
-	delegate *redis.Client
+	delegate redis.UniversalClient
 }
 
 func (c *conn) Get(name string) (string, error) {

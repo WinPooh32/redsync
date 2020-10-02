@@ -2,9 +2,10 @@ package main
 
 import (
 	goredislib "github.com/go-redis/redis"
+	"github.com/stvp/tempredis"
+
 	"github.com/winpooh32/redsync/v4"
 	"github.com/winpooh32/redsync/v4/redis/goredis"
-	"github.com/stvp/tempredis"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-module github.com/winpooh32/redsync
+module github.com/winpooh32/redsync/v4
 
 go 1.12
 

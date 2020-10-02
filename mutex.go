@@ -6,8 +6,9 @@ import (
 	"encoding/base64"
 	"time"
 
+	"github.com/hashicorp/errwrap"
+
 	"github.com/winpooh32/redsync/v4/redis"
-	"github.com/hashicorp/go-multierror"
 )
 
 // A DelayFunc is used to decide the amount of time to wait between retries.
@@ -214,7 +215,7 @@ func (m *Mutex) actOnPoolsAsync(actFn func(redis.Pool) (bool, error)) (int, erro
 		if r.Status {
 			n++
 		} else if r.Err != nil {
-			err = multierror.Append(err, r.Err)
+			err = errwrap.Wrap(err, r.Err)
 		}
 	}
 	return n, err
